@@ -1,0 +1,202 @@
+.fade-down {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+.under-footer {
+  background-color: #222222;
+  width: 100%;
+}
+
+.active {
+  color: #5e7753 !important;
+}
+.nav-link:hover {
+  color: #5e7753;
+}
+
+.footer {
+  background-color: #e2e6e2;
+  width: 100%;
+}
+h1 {
+  font-family: Playfair Display;
+  font-size: 30px !important;
+  color: #5e7753;
+  font-weight: bold;
+}
+h2 {
+  font-size: 22px;
+  font-family: Playfair Display;
+  color: #5e7753;
+  font-weight: bold;
+}
+h3 {
+  font-size: 18px;
+  font-family: Playfair Display;
+  color: #5e7753;
+  font-weight: bold;
+}
+
+p,
+a,
+label {
+  font-size: 14px !important;
+  color: black;
+  font-family: Inter;
+}
+.mt-6 {
+  margin-top: 96px;
+}
+.mt-7 {
+  margin-top: 192px;
+}
+
+.banner-mobile {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner-mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Adjust the opacity by changing the alpha value (0.5 in this case) */
+}
+
+.banner-mobile h1,
+.banner-mobile h2,
+.banner-mobile a {
+  /* Text color */
+  position: relative; /* Ensure text stays above the overlay */
+  z-index: 1; /* Ensure text is above the overlay */
+}
+.banner-mobile p {
+  position: relative;
+  z-index: 1;
+  font-size: large;
+}
+.banner-pc {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-pc::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Adjust the opacity by changing the alpha value (0.5 in this case) */
+}
+
+.banner-pc h1,
+.banner-pc h2,
+.banner-pc a {
+  /* Text color */
+  position: relative; /* Ensure text stays above the overlay */
+  z-index: 1; /* Ensure text is above the overlay */
+}
+.banner-pc p {
+  position: relative;
+  z-index: 1;
+}
+.img-content-mobile {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 80% 20%;
+  border-radius: 30px;
+}
+.img-content-pc {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.btn {
+  background-color: #5e7753;
+  border-radius: 30px;
+  font-family: Inter !important;
+}
+.btn:hover {
+  background-color: #5e7753;
+}
+#btn-send {
+  height: 30px;
+}
+#banner-subtitle-mobile,
+#banner-subtitle-pc {
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 26px !important;
+  }
+  p,
+  a,
+  label {
+    font-size: 20px !important;
+  }
+  .banner-mobile p {
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 60px !important;
+  }
+  h2 {
+    font-size: 40px !important;
+  }
+  h3 {
+    font-size: 36px !important;
+  }
+  p {
+    font-size: 30px !important;
+  }
+  footer p,
+  a.btn,
+  label {
+    font-size: 20px !important;
+  }
+  footer h3 {
+    font-size: 30px !important;
+  }
+  .under-footer p,
+  a {
+    font-size: 20px !important;
+  }
+}

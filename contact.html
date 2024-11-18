@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="d-flex d-lg-none align-items-center container-fluid px-5 py-3"
+      >
+        <!--Entete mobile-->
+        <div class="me-auto">
+          <img src="images/logo-bv.png" width="150" height="150" />
+        </div>
+        <div class="ms-auto">
+          <nav class="navbar">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas-menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvas-menu"
+            >
+              <div class="offcanvas-header">
+                <p class="h1 pol2">Menu</p>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <nav class="navbar-nav">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                  <a class="nav-link" href="presentation.html">Présentation</a>
+                  <a class="nav-link active" href="contact.html">Contact</a>
+                </nav>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="d-none d-lg-flex align-items-center container">
+        <!--Entete pc-->
+        <div class="me-auto">
+          <img src="images/logo-bv.png" width="200" height="200" />
+        </div>
+        <nav class="navbar navbar-expand">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="presentation.html">Présentation</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div
+        class="container-fluid d-grid d-lg-none mt-3 p-5 align-items-center banner-mobile"
+        style="
+          background-image: url(images/banniere1.jpg);
+          background-position: center;
+        "
+      >
+        <!--Banniere mobile-->
+        <h1 class="text-center fade-down">Contact</h1>
+      </div>
+      <div
+        class="container-fluid d-none d-lg-grid p-5 align-items-center banner-pc"
+        style="
+          background-image: url(images/banniere1.jpg);
+          background-position: center;
+        "
+      >
+        <!--banniere pc-->
+        <h1 class="text-center fade-down">CONTACT</h1>
+      </div>
+      <div class="container d-block d-lg-none fade-down">
+        <!--Formulaire mobile-->
+        <h1 class="text-center mt-5 mb-5">Contactez-nous !</h1>
+        <form target="_blank" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col mb-3">
+                <label for="name" class="form-label">Nom, Prénom</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Nom, Prénom"
+                  required
+                />
+              </div>
+              <div class="col mb-3">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Adresse e-mail"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="message" class="form-label">Votre message</label>
+            <textarea
+              placeholder="Votre message"
+              class="form-control"
+              name="message"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="text-white btn">ENVOYER</button>
+        </form>
+      </div>
+      <div class="container d-none d-lg-block fade-down">
+        <!--Formulaire pc-->
+        <h1 class="text-center mt-7">Contactez-nous !</h1>
+        <form target="_blank" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col mb-3 mt-5">
+                <label for="name" class="form-label">Nom, Prénom</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Nom complet"
+                  required
+                />
+              </div>
+              <div class="col mb-3">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Adresse e-mail"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="message" class="form-label">Votre message</label>
+            <textarea
+              placeholder="Votre message"
+              class="form-control"
+              name="message"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="text-white btn">ENVOYER</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer container-fluid d-grid d-lg-none mt-5 p-5">
+        <!--footer mobile-->
+        <h3 class="text-center">BIEN VIEILLIR À SEINGBOUSE</h3>
+        <p class="text-center">
+          Bien Vieillir à Seingbouse est une association fondée en 2023.
+        </p>
+        <h3 class="text-center mt-4">COORDONNÉES</h3>
+        <p class="text-center">X Rue Principale</p>
+        <p class="text-center">57455 Seingbouse</p>
+        <p class="text-center">bien-vieillir@gmail.com</p>
+        <h3 class="text-center mt-4">NAVIGATION</h3>
+        <nav class="navbar-nav text-center">
+          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" href="presentation.html">Présentation</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer container-fluid text-center d-none d-lg-grid mt-7">
+        <!--footer pc-->
+        <div class="row p-5">
+          <div class="col">
+            <h3 class="">BIEN VIEILLIR À SEINGBOUSE</h3>
+            <p class="">
+              Bien Vieillir à Seingbouse est une association fondée en 2023.
+            </p>
+          </div>
+          <div class="col">
+            <h3 class="">COORDONNÉES</h3>
+            <p class="">X Rue Principale</p>
+            <p class="">57455 Seingbouse</p>
+            <p class="">bien-vieillir-a-seingbouse@outlook.com</p>
+          </div>
+          <div class="col">
+            <h3>NAVIGATION</h3>
+            <nav class="navbar-nav">
+              <a class="nav-link" href="index.html">Accueil</a>
+              <a class="nav-link" href="presentation.html">Présentation</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-grid d-lg-none px-5 py-3 under-footer">
+        <!--partie noire en dessous du footer mobile-->
+        <p class="text-center text-secondary">© Bien Vieillir à Seingbouse</p>
+        <a class="text-center text-secondary" href="mentions-legales.html"
+          >Mentions légales</a
+        >
+      </div>
+      <div class="container-fluid d-none d-lg-flex px-5 py-4 under-footer">
+        <!--partie noire en dessous du footer pc-->
+        <p class="text-secondary">© Bien Vieillir à Seingbouse</p>
+        <a class="ms-auto text-secondary" href="mentions-legales.html"
+          >Mentions légales</a
+        >
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

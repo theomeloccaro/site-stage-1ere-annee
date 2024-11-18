@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bien Vieillir à Seingbouse</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="d-flex d-lg-none align-items-center container-fluid px-5 py-3"
+      >
+        <!--Entete mobile-->
+        <div class="me-auto">
+          <img src="images/logo-bv.png" width="150" height="150" alt="logo" />
+        </div>
+        <div class="ms-auto">
+          <nav class="navbar">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas-menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvas-menu"
+            >
+              <div class="offcanvas-header">
+                <p class="h1 pol2">Menu</p>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <nav class="navbar-nav">
+                  <a class="nav-link active" href="index.html">Accueil</a>
+                  <a class="nav-link" href="presentation.html">Présentation</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </nav>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="d-none d-lg-flex align-items-center container">
+        <!--Entete pc-->
+        <div class="me-auto">
+          <img src="images/logo-bv.png" alt="logo" width="200" height="200" />
+        </div>
+        <nav class="navbar navbar-expand">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item pe-3">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="presentation.html">Présentation</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div
+        class="container-fluid d-grid d-lg-none mt-3 p-5 banner-mobile"
+        style="
+          background-image: url(images/banniere1.jpg);
+          background-position: center;
+        "
+      >
+        <!--Banniere mobile-->
+        <h1 class="text-center">Découvrez Bien Vieillir À Seingbouse !</h1>
+        <h2 class="text-center" id="banner-subtitle-mobile">
+          La nouvelle résidence sénior de Seingbouse vous ouvre ses portes !
+        </h2>
+      </div>
+      <div
+        class="container-fluid d-none d-lg-grid p-5 align-items-center banner-pc"
+        style="
+          background-image: url(images/banniere1.jpg);
+          background-position: center;
+        "
+      >
+        <!--banniere pc-->
+        <h1 class="text-center mt-5 fade-down">
+          Découvrez Bien Vieillir À Seingbouse !
+        </h1>
+        <h2 class="text-center fade-down" id="banner-subtitle-pc">
+          La nouvelle résidence sénior de Seingbouse vous ouvre ses portes !
+        </h2>
+      </div>
+      <div class="container-fluid d-block d-lg-none mt-5">
+        <!--1er bloc mobile-->
+        <div class="row align-items-center">
+          <div class="col me-3">
+            <h2>Qu'est-ce que Bien Vieillir à Seingbouse ?</h2>
+            <p class="mt-2">
+              Bien Vieillir à Seingbouse est bien plus qu’une résidence senior.
+              C’est une association qui veille au bien être de vos proches.
+            </p>
+          </div>
+          <div class="col ms-2">
+            <img src="images/image1.jpeg" alt="" class="img-content-mobile" />
+          </div>
+        </div>
+      </div>
+      <div class="container d-none d-lg-block mt-7 fade-down">
+        <!--1er bloc pc-->
+        <div class="row align-items-center">
+          <div class="col me-5">
+            <h2>Qu'est-ce que Bien Vieillir à Seingbouse ?</h2>
+            <p class="mt-5">
+              Bien Vieillir à Seingbouse est bien plus qu’une résidence senior.
+              C’est une association qui veille au bien être de vos proches.
+            </p>
+          </div>
+          <div class="col ms-5">
+            <img
+              src="images/image1.jpeg"
+              class="img-content-pc"
+              style="object-position: 10% 20%"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid d-grid d-lg-none mt-5 p-5 align-items-center banner-mobile"
+        style="
+          background-image: url(images/banniere2.jpeg);
+          background-position: center;
+        "
+      >
+        <!--Banniere 2 mobile-->
+        <h2 class="text-center">
+          Vous souhaitez en savoir plus sur la résidence ?
+        </h2>
+        <p class="text-center">Cliquez sur le bouton ci-dessous</p>
+        <a
+          class="btn my-auto mx-auto text-white"
+          href="presentation.html"
+          role="button"
+          >EN SAVOIR PLUS</a
+        >
+      </div>
+      <div
+        class="container-fluid d-none d-lg-grid p-5 align-items-center banner-pc mt-7 fade-down"
+        style="
+          background-image: url(images/banniere2.jpeg);
+          background-position: center;
+        "
+      >
+        <!-- 2eme banniere pc-->
+        <h2 class="text-center mt-5">
+          Vous souhaitez en savoir plus sur la résidence ?
+        </h2>
+        <p class="text-center">
+          Cliquez sur le bouton ci-dessous pour en savoir plus
+        </p>
+        <a
+          class="btn my-auto mx-auto align-items-center text-white"
+          href="presentation.html"
+          role="button"
+          >EN SAVOIR PLUS</a
+        >
+      </div>
+      <div class="container-fluid d-block d-lg-none mt-5">
+        <!--2eme bloc mobile-->
+        <div class="row align-items-center">
+          <div class="col me-3">
+            <h2>Contactez-Nous</h2>
+            <p class="mt-2">
+              Cliquez sur le bouton ci-dessous pour nous contacter
+            </p>
+            <a
+              class="btn my-auto mx-auto align-items-center text-white"
+              href="contact.html"
+              role="button"
+              >CONTACT</a
+            >
+          </div>
+          <div class="col ms-2">
+            <img src="images/image2.jpeg" class="img-content-mobile" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container d-none d-lg-block mt-7 fade-down">
+        <!--2eme bloc pc-->
+        <div class="row align-items-center">
+          <div class="col me-5">
+            <h2>Contactez-Nous</h2>
+            <p class="mt-3">
+              Cliquez sur le bouton ci-dessous pour nous contacter
+            </p>
+            <a
+              class="btn my-auto mx-auto align-items-center mt-3 text-white"
+              href="contact.html"
+              role="button"
+              >CONTACT</a
+            >
+          </div>
+          <div class="col ms-5">
+            <img
+              src="images/image2.jpeg"
+              class="img-content-pc"
+              style="object-position: 10% 20%"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer container-fluid d-grid d-lg-none mt-5 p-5">
+        <!--footer mobile-->
+        <h3 class="text-center">BIEN VIEILLIR À SEINGBOUSE</h3>
+        <p class="text-center">
+          Bien Vieillir à Seingbouse est une association fondée en 2023.
+        </p>
+        <h3 class="text-center mt-4">COORDONNÉES</h3>
+        <p class="text-center">X Rue Principale</p>
+        <p class="text-center">57455 Seingbouse</p>
+        <p class="text-center">bien-vieillir@gmail.com</p>
+        <h3 class="text-center mt-4">NAVIGATION</h3>
+        <nav class="navbar-nav text-center">
+          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" href="presentation.html">Présentation</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer container-fluid text-center d-none d-lg-grid mt-7">
+        <!--footer pc-->
+        <div class="row p-5">
+          <div class="col">
+            <h3 class="">BIEN VIEILLIR À SEINGBOUSE</h3>
+            <p class="">
+              Bien Vieillir à Seingbouse est une association fondée en 2023.
+            </p>
+          </div>
+          <div class="col">
+            <h3 class="">COORDONNÉES</h3>
+            <p class="">X Rue Principale</p>
+            <p class="">57455 Seingbouse</p>
+            <p class="">bien-vieillir-a-seingbouse@outlook.com</p>
+          </div>
+          <div class="col">
+            <h3>NAVIGATION</h3>
+            <nav class="navbar-nav">
+              <a class="nav-link" href="index.html">Accueil</a>
+              <a class="nav-link" href="presentation.html">Présentation</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-grid d-lg-none px-5 py-3 under-footer">
+        <!--partie noire en dessous du footer mobile-->
+        <p class="text-center text-secondary">© Bien Vieillir à Seingbouse</p>
+        <a class="text-center text-secondary" href="mentions-legales.html"
+          >Mentions légales</a
+        >
+      </div>
+      <div class="container-fluid d-none d-lg-flex px-5 py-4 under-footer">
+        <!--partie noire en dessous du footer pc-->
+        <p class="text-secondary">© Bien Vieillir à Seingbouse</p>
+        <a class="ms-auto text-secondary" href="mentions-legales.html"
+          >Mentions légales</a
+        >
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
